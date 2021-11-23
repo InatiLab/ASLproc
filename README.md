@@ -7,9 +7,9 @@ Pre-Processing for Volumetric Analysis of Arterial Spin Labeling(ASL) Data
 ```
 -   This script registers research mprage to clinical t1 and registers ASL data to mprage
 -   For some patients, the asl-to-mprage registration fails. In this case, there are several options you can try. The default script uses nmi cost function with the edge option and rigid body option. If this fails, delete the reg folder and retry 1 and 2, using the following options for this step:
-•	ASL_do_01.sh -lpa ${subj}
-•	ASL_do_01.sh -lpaZZ ${subj}
-•	ASL_do_01.sh -noEdge ${subj}
+* ASL_do_01.sh -lpa ${subj}
+*	ASL_do_01.sh -lpaZZ ${subj}
+* ASL_do_01.sh -noEdge ${subj}
 
 ```
 ./ASL_do_02.sh SUBJ
