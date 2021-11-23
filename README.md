@@ -28,12 +28,12 @@ Pre-Processing for Volumetric Analysis of Arterial Spin Labeling(ASL) Data
 -   For some patients, the skull stripping above fails. Delete the ${subj}/reg/alignMNI folder as well as CBF.nii and asl-pos.nii in ${subj}/reg. Solutions I used are below: 
     - A gyrus is cut off (usually top of head); run the following:
         - ASL_do_04.sh -ss_a ${subj}
-o	This uses the following skull strip options and dilates the mask by 5: 
-•	-blur_fwhm 2 -use_skull
-•	After running the above, part of the brain is still being lost in skull stripping:
-o	ASL_do_04.sh -ss_b ${subj}
-o	This uses the following skull strip options and dilates the mask by 8: 
-•	-blur_fwhm 2 -use_skull
+        - This uses the following skull strip options and dilates the mask by 5: 
+            - -blur_fwhm 2 -use_skull
+    - After running the above, part of the brain is still being lost in skull stripping:
+        - ASL_do_04.sh -ss_b ${subj}
+    	- This uses the following skull strip options and dilates the mask by 8: 
+            - -blur_fwhm 2 -use_skull
 
 ```
 ./ASL_do_05.sh SUBJ 
