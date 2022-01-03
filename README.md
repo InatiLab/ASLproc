@@ -61,9 +61,9 @@ ${subj}/reg directory. Solutions I used are below:
             - -blur_fwhm 2 -use_skull
 
 
-**CHECK: for skull strip, compare ${subj}/reg/alignMNI/cbf_ss_shft.nii, mprage_reg_shft.nii**
-**CHECK: for the MNI reg compare ${subj}/reg/alignMNI/cbf_ss_mni.nii and scripts/__files/MNI152_2009_template_SSW.nii.gz**
-**CHECK: make sure the CBF values are in the range of 40-80**
+- **CHECK: for skull strip, compare ${subj}/reg/alignMNI/cbf_ss_shft.nii, mprage_reg_shft.nii**
+- **CHECK: for the MNI reg compare ${subj}/reg/alignMNI/cbf_ss_mni.nii and scripts/__files/MNI152_2009_template_SSW.nii.gz**
+- **CHECK: make sure the CBF values are in the range of 40-80**
 
 ```
 ./ASL_do_05.sh SUBJ
